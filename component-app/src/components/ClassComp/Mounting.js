@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import FunctComp from "../FunctComp";
+import FecthData from "./FecthData";
 import Halu from "./Updating";
 
 export default class Clock extends Component {
@@ -27,6 +29,11 @@ export default class Clock extends Component {
         <h1>Hello, World!</h1>
         <h2>It is {this.state.date.toLocaleTimeString()}</h2>
         <Halu />
+
+        <h2>FecthData Class Component</h2>
+        <FecthData />
+        <h2>FecthData Function Component</h2>
+        <FunctComp />
       </div>
     );
   }
